@@ -21,7 +21,7 @@ const COLUMNS = [
     links: [
       { label: "About", href: "/about" },
       { label: "Features", href: "/features" }, // TODO real route
-      { label: "How It Works", href: "/how-it-works" }, // TODO real route
+      { label: "How It Works", href: "/howitworks" }, // TODO real route
     ],
   },
   {
