@@ -38,22 +38,22 @@ interface Review {
 
 const FEATURES: FeatureCard[] = [
   {
-    title: "Live Voice Rooms",
-    image: "/images/g1.jpeg",
+    title: "First Free Wallet Balance",
+    image: "/images/g1.webp",
     alt: "Phone showing a live voice room",
     bg: "bg-[#ecebf3]",
-    icon: Mic,
-  },
-  {
-    title: "Talk By Interest",
-    image: "/images/g2.jpeg",
-    alt: "Friends chatting about shared interests",
-    bg: "bg-[#d9d2f5]",
     icon: Sparkles,
   },
   {
+    title: "Talk By Interest",
+    image: "/images/home-img.webp",
+    alt: "Friends chatting about shared interests",
+    bg: "bg-[#d9d2f5]",
+    icon: Mic,
+  },
+  {
     title: "Safe Conversations",
-    image: "/images/g3.jpeg",
+    image: "/images/g2.webp",
     alt: "Illustration representing safe conversations",
     bg: "bg-[#9b9aa3]",
     icon: ShieldCheck,
@@ -98,9 +98,9 @@ const REVIEWS: Review[] = [
 
 const FLOATERS = [
   { src: "/images/i1.webp", pos: "left-[2%] top-[4%]", size: 48, delay: "0s" },
-  { src: "/images/i2.webp", pos: "right-[2%] top-[8%]", size: 44, delay: "1s" },
+  { src: "/images/phone.png", pos: "right-[2%] top-[8%]", size: 44, delay: "1s" },
   { src: "/images/i3.webp", pos: "right-[-4%] top-[42%]", size: 38, delay: "2s" },
-  { src: "/images/i4.webp", pos: "left-[-4%] top-[58%]", size: 34, delay: "3s" },
+  { src: "/images/612.jpg", pos: "left-[-4%] top-[58%]", size: 34, delay: "3s" },
 ];
 
 /* ---------- Shared components ---------- */
@@ -214,9 +214,8 @@ function StoreButton({
     <a
       href={href}
       aria-label={label}
-      className={`inline-flex items-center gap-2 rounded-xl bg-black text-white shadow-md ring-1 ring-white/20 transition duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0b0a1f] ${
-        compact ? "h-9 px-3" : "h-11 px-4"
-      }`}
+      className={`inline-flex items-center gap-2 rounded-xl bg-black text-white shadow-md ring-1 ring-white/20 transition duration-300 hover:-translate-y-1 hover:shadow-xl active:scale-95 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#0b0a1f] ${compact ? "h-9 px-3" : "h-11 px-4"
+        }`}
     >
       {icon}
       <span className="flex flex-col text-left leading-none">
@@ -243,9 +242,8 @@ function StoreBadges({
 
   return (
     <div
-      className={`flex flex-wrap items-center gap-2 ${
-        center ? "justify-center" : "justify-center sm:justify-start"
-      }`}
+      className={`flex flex-wrap items-center gap-2 ${center ? "justify-center" : "justify-center sm:justify-start"
+        }`}
     >
       <StoreButton
         href="#"
@@ -573,9 +571,8 @@ function Testimonials() {
               return (
                 <figure
                   key={`${index}-${offset}`}
-                  className={`swap rounded-2xl bg-white p-5 transition-shadow hover:shadow-lg ${
-                    offset === 1 ? "hidden sm:block" : ""
-                  }`}
+                  className={`swap rounded-2xl bg-white p-5 transition-shadow hover:shadow-lg ${offset === 1 ? "hidden sm:block" : ""
+                    }`}
                   style={delayStyle(offset * 100)}
                 >
                   <figcaption className="flex items-center gap-3">
